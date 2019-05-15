@@ -12,6 +12,10 @@ export default new Router({
         },
         {
             path: '/',
+            redirect: '/home/main'
+        },
+        {
+            path: '/home',
             name: 'home',
             component: require('@/views/home').default,
             children: [
